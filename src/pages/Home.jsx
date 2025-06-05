@@ -51,6 +51,21 @@ const Home = () => {
             </div>
         </div>
       </div>
+      {/* Project Video Section */}
+      <div className="w-full max-w-3xl mt-16 flex flex-col items-center">
+        <h2 className="text-3xl font-bold text-[#275481] mb-4">Project Video</h2>
+        <div className="w-full flex justify-center">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            title="Project Video"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="rounded-lg shadow max-w-full"
+          ></iframe>
+        </div>
+      </div>
     </div>
   )
 }
