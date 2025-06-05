@@ -13,14 +13,14 @@ const Home = () => {
       <h3 className="text-lg text-[#6b7280] mb-6">Contributing Developers</h3>
       <div className="flex flex-col items-center space-y-10">
         {/*Developer 1*/}
-        {/* <div className="flex items-center space-x-4 bg-white p-4 rounded-xl w-full max-w-3xl">
+        <div className="flex items-center space-x-4 bg-white p-4 rounded-xl w-full max-w-3xl">
           <img src={emptyProfile} alt="Profile picture" className="w-24 h-24 rounded-full object-cover"/>
             <div className="text-left">
               <h3 className="text-2xl font-bold text-[#275481]">Charlotte Larsen Freeman</h3>
               <h4 className="text-lg text-black">larson95@wwu.edu</h4>
               <p className="text-sm">Head developer</p>
             </div>
-        </div> */}
+        </div>
         {/*Developer 2*/}
         <div className="flex items-center space-x-4 bg-white p-4 rounded-xl w-full max-w-3xl">
           <img src={andrewProfile} alt="Profile picture" className="w-24 h-24 rounded-full object-cover"/>
@@ -58,7 +58,7 @@ const Home = () => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+            src="/public/videos/436video.mp4"
             title="Project Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
