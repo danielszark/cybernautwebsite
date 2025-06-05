@@ -1,5 +1,5 @@
 import React from 'react'
-// import emptyProfile from '../assets/emptyprofilepic.jpg'
+import emptyProfile from '../assets/emptyprofilepic.jpg'
 import andrewProfile from '../assets/andrewprofilepic.jpg'
 import linneaProfile from '../assets/linneaprofilepicture.jpg'
 
@@ -32,14 +32,14 @@ const Home = () => {
         </div>
 
         {/*Developer 3*/}
-        {/* <div className="flex items-center space-x-4 bg-white p-4 rounded-xl w-full max-w-3xl">
+        <div className="flex items-center space-x-4 bg-white p-4 rounded-xl w-full max-w-3xl">
           <img src={emptyProfile} alt="Profile picture" className="w-24 h-24 rounded-full object-cover"/>
             <div className="text-left">
               <h3 className="text-2xl font-bold text-[#275481]">Daniel Szarkowicz</h3>
               <h4 className="text-lg text-black">szarkod@wwu.edu</h4>
               <p className="text-sm">Frontend developer</p>
             </div>
-        </div> */}
+        </div>
 
         {/*Developer 4*/}
         <div className="flex items-center space-x-4 bg-white p-4 rounded-xl w-full max-w-3xl">

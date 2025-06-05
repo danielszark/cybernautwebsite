@@ -8,14 +8,16 @@ import FinalProduct from './pages/FinalProduct';
 
 function App() {
   return (
-    <div>
+    <div className="min-h-screen bg-[#f0f4f8]">
       <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/description" element={<Description />} />
-        <Route path="/research" element={<Research />} />
-        <Route path="/final-product" element={<FinalProduct />} />
-      </Routes>
+      <main className="max-w-screen-xl mx-auto">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/description" element={<Description />} />
+          <Route path="/research" element={<Research />} />
+          <Route path="/final-product" element={<FinalProduct />} />
+        </Routes>
+      </main>
     </div>
   )
 }

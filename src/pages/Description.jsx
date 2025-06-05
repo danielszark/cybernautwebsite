@@ -38,7 +38,7 @@ const Description = () => {
             className="bg-white p-6 rounded-lg w-full max-w-3xl shadow"
           >
             <h2 className="text-2xl font-bold text-[#275481] mb-2">{box.header}</h2>
-            <p className="text-black text-lg">
+            <p className="text-black text-lg indent-8 text-left">
               {box.content}
             </p>
           </div>

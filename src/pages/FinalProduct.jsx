@@ -39,39 +39,57 @@ const FinalProduct = () => {
       <h2 className="text-3xl font-semibold text-[#275481] mb-6">
         Features & Flow
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl mx-auto">
-
-        {/* Left Column: Features */}
-        <div className="flex flex-col space-y-8">
-          {boxData.map((box, idx) => (
-            <div key={idx} className="bg-white p-6 rounded-lg shadow w-full">
-              <h3 className="text-2xl font-bold text-[#275481] mb-2">
-                {box.header}
-              </h3>
-              <p className="text-black text-lg text-left">
-                {box.content}
-              </p>
+      
+      <div className="w-full max-w-6xl mx-auto flex flex-col gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-6 rounded-lg shadow">
+          <div className="flex flex-col justify-center indent 8">
+            <h3 className="text-2xl font-bold text-[#275481] mb-2">{boxData[0].header}</h3>
+            <p className="text-black text-lg text-left">{boxData[0].content}</p>
+          </div>
+          {boxData[0].images && boxData[0].images.length > 0 && (
+            <div className="flex flex-row md:flex-col gap-4 justify-center items-center">
+              {boxData[0].images.map((src, i) => (
+                <img
+                  key={i}
+                  src={src}
+                  alt={`${boxData[0].header} img ${i + 1}`}
+                  className="w-120 h-70 rounded border-1"
+                />
+              ))}
+            </div>
+          )}
+        </div>
+        {[1, 2].map(idx => (
+          <div key={idx} className="flex flex-col md:flex-row gap-8 items-center bg-white p-6 rounded-lg shadow">
+            {/* Text */}
+            <div className="flex-1 flex flex-col">
+              <h3 className="text-2xl font-bold text-[#275481] mb-2">{boxData[idx].header}</h3>
+              <p className="text-black text-lg text-left indent-8">{boxData[idx].content}</p>
+            </div>
+            {/* Image */}
+            {boxData[idx].images && boxData[idx].images.length > 0 && (
+              <div className="flex flex-wrap gap-4 justify-end">
+                {boxData[idx].images.map((src, i) => (
+                  <img
+                  key={i}
+                  src={src}
+                  alt={`${boxData[idx].header} img ${i + 1}`}
+                  className="w-120 h-70 rounded border-1"
+                />
+              ))}
+              </div>
+            )}
+          </div>
+        ))}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {boxData.slice(3, 5).map((box, idx) => (
+            <div key={idx} className="bg-white p-6 rounded-lg shadow w-full flex flex-col">
+              <h3 className="text-2xl font-bold text-[#275481] mb-2">{box.header}</h3>
+              <p className="text-black text-lg text-left indent-8">{box.content}</p>
             </div>
           ))}
         </div>
 
-        {/* Right Column: Feature Images */}
-        <div className="flex flex-col space-y-8">
-          {boxData.map((box, idx) =>
-            box.images && box.images.length > 0 ? (
-              <div key={idx} className="flex flex-wrap gap-4">
-                {box.images.map((src, i) => (
-                  <img
-                    key={i}
-                    src={src}
-                    alt={`${box.header} img ${i + 1}`}
-                    className="w-120 h-70 rounded"
-                  />
-                ))}
-              </div>
-            ) : null
-          )}
-        </div>
       </div>
 
       {/* Technology Used */}
@@ -80,6 +98,7 @@ const FinalProduct = () => {
       </h2>
       <div className="grid grid-cols-1 gap-4 w-full max-w-3xl">
         <div className="bg-white p-6 rounded-lg shadow">
+          <h3 className="text-2xl font-bold text-[#275481] mb-2">MERN Stack</h3>
           <p className="text-black text-lg">
             We followed the MERN stack for our project development (MongoDB for the database, Express server built atop Node.js, and React on the frontend). REST API conventions were followed for client-server communication. Git and GitHub were used for version control and team collaboration.
           </p>
@@ -92,6 +111,7 @@ const FinalProduct = () => {
       </h2>
       <div className="grid grid-cols-1 gap-4 w-full max-w-3xl">
         <div className="bg-white p-6 rounded-lg shadow">
+          <h3 className="text-2xl font-bold text-[#275481] mb-2">Extended Usability</h3>
           <p className="text-black text-lg">
             Future iterations of our prototype could include many useful new features. We would like to design a section of our website for educators, such as teachers or parents. We would also implement tailored content for students of different age groups. For instance, a 6th grader would be exposed to different content than a 12th grader, with content and game difficulty scaled appropriately. Additional accessibility features, such as language selection and audio, would be useful for students with learning disabilities or for whom English isn’t a native language. Finally, building game rooms in the server would be a competitive and interactive feature to include for students in a classroom setting, as it could both increase engagement and social collaboration among peers.
           </p>
@@ -103,7 +123,7 @@ const FinalProduct = () => {
         href="https://github.com/danielszark/cybernaut"
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-12 text-[#275481] hover:underline"
+        className="mt-12 text-[#275481] hover:underline text-xl"
       >
         Click Here to View our GitHub Repository
       </a>

@@ -72,7 +72,7 @@ const Research = () => {
               {box.header}
             </h2>
 
-            <p className="text-black text-lg mb-4">{box.content}</p>
+            <p className="text-black text-lg mb-4 ">{box.content}</p>
 
             {box.images && box.images.length > 0 && (
               <div className="flex flex-wrap justify-center gap-4 mb-4">
