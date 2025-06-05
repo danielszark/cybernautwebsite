@@ -5,25 +5,25 @@ const boxData = [
   { header: "Systematic Literature Review", 
     content: "Together we read eight papers, all of which explored technological solutions of some form to the problem of social media having negative impacts on kids. Some of the proposed solutions mirrored social media sites themselves and sought to provide kids with a greater understanding of the real-world social media environment, albeit in a controlled context. One solution, InstaClone, served as a walled-garden environment to teach students data literacy concepts. It resembled Instagram but included educational features to teach students about data collection and the underlying algorithms on social media platforms. Another solution, CHAITok, resembled TikTok but made students more aware in real-time of algorithmic effects and data collection on their age group. These papers provided a lot of useful research and insights, making us realize that our solution would need to engage and teach students at the same time.",
     images: [
-      "../images/image7.png",
-      "../images/image17.png",
-      "../images/image19.png",
-      "../images/image2.png",
-      "../images/image3.png"
+      "/cybernautwebsite/images/image7.png",
+      "/cybernautwebsite/images/image17.png",
+      "/cybernautwebsite/images/image19.png",
+      "/cybernautwebsite/images/image2.png",
+      "/cybernautwebsite/images/image3.png"
     ] 
   },
 
   { header: "System Analysis", 
     content: "We analyzed eight different systems related to our topic. Due to a scarcity of existing solutions for the social media problem, we often reviewed systems meant to teach students other educational content. These systems generally included features meant to be interactive and engaging for students, and we were happy to take notes on what worked well so we could incorporate those features into our prototype. One system that stood out, Be Internet Awesome, included a full narrative game with good visual appeal, and it contributed meaningfully to the direction of our prototype. We also adapted the quiz feature from Kahoot!, a general education platform, into our updated prototype.",
     images: [
-      "../images/image10.png",
-      "../images/image18.png",
-      "../images/image11.png",
-      "../images/image1.png",
-      "../images/image4.png",
-      "../images/image15.png",
-      "../images/image16.png",
-      "../images/image8.png",
+      "/cybernautwebsite/images/image10.png",
+      "/cybernautwebsite/images/image18.png",
+      "/cybernautwebsite/images/image11.png",
+      "/cybernautwebsite/images/image1.png",
+      "/cybernautwebsite/images/image4.png",
+      "/cybernautwebsite/images/image15.png",
+      "/cybernautwebsite/images/image16.png",
+      "/cybernautwebsite/images/image8.png",
     ] 
   },
 
@@ -46,12 +46,12 @@ const boxData = [
     </>
   ),
   images: [
-      "../images/image12.png",
-      "../images/image9.png",
-      "../images/image4.png",
-      "../images/image6.png",
-      "../images/image14.png",
-      "../images/image5.png",
+      "/cybernautwebsite/images/image12.png",
+      "/cybernautwebsite/images/image9.png",
+      "/cybernautwebsite/images/image4.png",
+      "/cybernautwebsite/images/image6.png",
+      "/cybernautwebsite/images/image14.png",
+      "/cybernautwebsite/images/image5.png",
   ]
 }
 ];
