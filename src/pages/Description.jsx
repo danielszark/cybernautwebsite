@@ -20,7 +20,7 @@ const boxData = [
 
   { header: "How is our solution different from others?", content: "Our solution is different to others because we take a step-by-step learning approach that teaches through a story. We have a mascot, Cybernaut, who represents any common user. Through the storytelling we’ve created, we show Cybernaut going through situations someone might find themselves in. Having your data saved and manipulated by others, impersonation, or how small-scale celebrities can be deceitful." },
 
-  { header: "What technology did we use?", content: "For our project we used React to create our website, utilizing .jsx files and Tailwind (an in-line editor similar to CSS). During development, we ran the websites from our respective terminals to test as we programmed. We chose React so we could see active changes as we worked on the project, in addition, so we didn’t have to navigate between pages with a long refresh rate(?)." },
+  { header: "What technology did we use?", content: "For our project we used React to create our website, utilizing .jsx files and Tailwind (an in-line editor similar to CSS). During development, we ran the websites from our respective terminals to test as we programmed. We chose React so we could see active changes as we worked on the project." },
 
   
 ];
